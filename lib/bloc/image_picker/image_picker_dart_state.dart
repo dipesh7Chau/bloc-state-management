@@ -1,8 +1,12 @@
 import 'package:equatable/equatable.dart';
+import 'package:image_picker/image_picker.dart';
 
 class ImagePickerState extends Equatable {
 
-  const ImagePickerState({});
+  final XFile ? file;
+  const ImagePickerState({
+    this.file
+});
   @override
   
   List<Object?> get props => throw UnimplementedError();
